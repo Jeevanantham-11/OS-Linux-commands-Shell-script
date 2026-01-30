@@ -47,19 +47,19 @@ cat < file1
 
 cat < file2
 ## OUTPUT
-
+![alt text](Output-Images/2.jpeg)
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
-
+![alt text](Output-Images/3.jpeg)
 comm file1 file2
  ## OUTPUT
-
+![alt text](Output-Images/4.jpeg)
  
 diff file1 file2
 ## OUTPUT
-
+![alt text](Output-Images/5.jpeg)
 
 #Filters
 
@@ -82,18 +82,18 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
+![alt text](Output-Images/6.jpeg)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+![alt text](Output-Images/7.jpeg)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+![alt text](Output-Images/8.jpeg)
 
 cat < newfile 
 ```
@@ -107,40 +107,40 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-
+![alt text](Output-Images/9.jpeg)
 
 
 grep hello newfile 
 ## OUTPUT
-
+![alt text](Output-Images/10.jpeg)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
-
+![alt text](Output-Images/11.jpeg)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
+![alt text](Output-Images/12.jpeg)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
+![alt text](Output-Images/13.jpeg)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-
+![alt text](Output-Images/14.jpeg)
 
 
 grep -w -n world newfile   
 ## OUTPUT
-
+![alt text](Output-Images/15.jpeg)
 
 cat < newfile 
 ```
@@ -163,57 +163,57 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
+![alt text](Output-Images/17.jpeg)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
+![alt text](Output-Images/19.jpeg)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
+![alt text](Output-Images/18.jpeg)
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
+![alt text](Output-Images/20.jpeg)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
+![alt text](Output-Images/21.jpeg)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![alt text](Output-Images/22.jpeg)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-
+![alt text](Output-Images/23.jpeg)
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-
+![alt text](Output-Images/24.jpeg)
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-
+![alt text](Output-Images/25.jpeg)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-
+![alt text](Output-Images/26.jpeg)
 
 egrep l{2} newfile
 ## OUTPUT
-
+![alt text](Output-Images/27.jpeg)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![alt text](Output-Images/28.jpeg)
 
 cat > file23
 ```
@@ -231,77 +231,77 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![alt text](Output-Images/29.jpeg)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![alt text](Output-Images/30.jpeg)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-
+![alt text](Output-Images/31.jpeg)
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+![alt text](Output-Images/32.jpeg)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
+![alt text](Output-Images/33.jpeg)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
+![alt text](Output-Images/34.jpeg)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-
+![alt text](Output-Images/35.jpeg)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
+![alt text](Output-Images/36.jpeg)
 
 
 seq 10 
 ## OUTPUT
-
+![alt text](Output-Images/37.jpeg)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
+![alt text](Output-Images/38.jpeg)
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
+![alt text](Output-Images/39.jpeg)
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-
+![alt text](Output-Images/40.jpeg)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![alt text](Output-Images/41.jpeg)
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![alt text](Output-Images/42.jpeg)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-
+![alt text](Output-Images/43.jpeg)
 
 
 sed -n '2,4{s/$/*/;p}' file23
-
+![alt text](Output-Images/44.jpeg)
 
 #Sorting File content
 cat > file21
@@ -314,7 +314,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![alt text](Output-Images/45.jpeg)
 
 cat > file22
 ```
@@ -327,14 +327,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-
+![alt text](Output-Images/46.jpeg)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-
+![alt text](Output-Images/47.jpeg)
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -350,18 +350,18 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
+![alt text](Output-Images/48.jpeg)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-
+![alt text](Output-Images/49.jpeg)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
+![alt text](Output-Images/50.jpeg)
 
 mkdir backupdir
  
@@ -371,21 +371,21 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-
+![alt text](Output-Images/64.jpeg)
 
 tar -xvf backup.tar
 ## OUTPUT
-
+![alt text](Output-Images/63.jpeg)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
-
+![alt text](Output-Images/62.jpeg)
 
 gunzip backup.tar.gz
 ## OUTPUT
-
+![alt text](Output-Images/61.jpeg)
  
 # Shell Script
 ```
@@ -395,7 +395,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
+![alt text](Output-Images/66.jpeg)
  
 cat << stop > herecheck.txt
 ```
@@ -407,7 +407,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-
+![alt text](Output-Images/60.jpeg)
 
 cat < scriptest.sh 
 ```bash
@@ -445,24 +445,25 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-
+![alt text](Output-Images/59.jpeg)
  
 ls file1
 ## OUTPUT
-
+![alt text](Output-Images/58.jpeg)
 echo $?
 ## OUTPUT 
+![alt text](Output-Images/57.jpeg)
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
-
+![alt text](Output-Images/56.jpeg)
 abcd
  
 echo $?
  ## OUTPUT
-
+![alt text](Output-Images/56.jpeg)
  
 # mis-using string comparisons
 
@@ -493,14 +494,14 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-
+![alt text](Output-Images/55.jpeg)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-
+![alt text](Output-Images/54.jpeg)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -527,7 +528,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-
+![alt text](Output-Images/53.jpeg)
 
 # check if with file location
 cat>ifnested.sh 
@@ -574,7 +575,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-
+![alt text](Output-Images/52.jpeg)
 
 # using numeric test comparisons
 cat > iftest.sh 
@@ -617,7 +618,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
-
+![alt text](Output-Images/90.jpeg)
 
 # check if a file
 cat > ifnested.sh 
@@ -667,7 +668,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
-
+![alt text](Output-Images/89.jpeg)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -696,7 +697,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![alt text](Output-Images/88.jpeg)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -712,7 +713,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-
+![alt text](Output-Images/87.jpeg)
 
 # using the case command
 cat >casecheck.sh 
@@ -733,7 +734,7 @@ $ chmod 755 casecheck.sh
  
 $ ./casecheck.sh 
  ##Output
-
+![alt text](Output-Images/86.jpeg)
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -750,7 +751,7 @@ $ chmod 755 whiletest.sh
 $ ./whiletest.sh
  
  ## Output
-
+![alt text](Output-Images/85.jpeg)
 cat untiltest.sh 
 ```bash
 \#using the until command
@@ -763,7 +764,7 @@ done
 ``` 
 $ chmod 755 untiltest.sh
 ## Output
- 
+ ![alt text](Output-Images/84.jpeg)
  
  
 cat forin1.sh 
@@ -777,6 +778,8 @@ done
  ```
  
 $ chmod 755 forin1.sh
+## Output
+![alt text](Output-Images/83.jpeg)
 
  
 cat forin2.sh 
@@ -803,6 +806,8 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
+##Output
+![alt text](Output-Images/82.jpeg)
 
 cat forin3.sh 
 ```bash
@@ -814,6 +819,8 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
+##Output
+![alt text](Output-Images/81.jpeg)
 
 cat forin1.sh 
 ```bash
@@ -847,7 +854,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![alt text](Output-Images/65.jpeg)
 
 
 cat forctype.sh 
@@ -862,7 +869,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
-![alt text](image-75.png)
+![alt text](Output-Images/80.jpeg)
 cat forctype1.sh 
 ```bash
 #!/bin/bash
@@ -875,7 +882,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
-
+![alt text](Output-Images/79.jpeg)
 cat fornested1.sh 
 ```bash
 #!/bin/bash
@@ -893,7 +900,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![alt text](Output-Images/79.jpeg)
  
 cat forbreak.sh 
 ```bash
@@ -914,7 +921,7 @@ echo "The for loop is completed“
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
-
+![alt text](Output-Images/77.jpeg)
 
 cat forbreak.sh 
 ```bash
@@ -936,7 +943,7 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
-
+![alt text](Output-Images/76.jpeg)
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -950,7 +957,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![alt text](Output-Images/75.jpeg)
 
  cat exread1.sh
 ```bash
@@ -963,7 +970,7 @@ $ chmod 755 exread1.sh
 $ ./exread1.sh 
 
 ## OUTPUT
-
+![alt text](Output-Images/74.jpeg)
 
 
 cat funcex.sh
@@ -983,10 +990,10 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-
+![alt text](Output-Images/73.jpeg)
  
  ./funcex.sh 1 2
-
+![alt text](Output-Images/72.jpeg)
  
 cat argshift.sh
 ```bash
@@ -1000,7 +1007,7 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
-
+![alt text](Output-Images/71.jpeg)
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1017,7 +1024,7 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
-
+![alt text](Output-Images/70.jpeg)
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1030,7 +1037,7 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
-
+![alt text](Output-Images/69.jpeg)
  
 cat > nc.awk
 ```bash
@@ -1061,7 +1068,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
-
+![alt text](Output-Images/68.jpeg)
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1088,7 +1095,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![alt text](Output-Images/67.jpeg)
 
 # RESULT:
 The Commands are executed successfully.
